@@ -24,10 +24,31 @@ const PContent = style.p`
     }
 `;
 
-const Bar = (props)=>(
-    <DivBar background={props.background} height={(props.height+5) + '%'}>
-            <PContent show={props.arraySize < 20}> {props.children} </PContent>
-    </DivBar>  
-);
+const Bar = (props)=>{
+
+    let background = '#fcfcfc';
+
+    if(props.sorted){
+        background = '#00d4bd';
+    }
+
+    if(props.stateD){
+        background = '#357dec';
+    }
+    else if(props.stateC){
+        background = '#ff4646';
+    }
+    else if(props.stateB){
+        background = '#d84756';
+    }
+    else if(props.stateA){
+        background = '#e64c06';
+    }
+
+    return (
+        <DivBar background={background} height={(props.height+5) + '%'}>
+                <PContent show={props.arraySize < 20}> {props.children} </PContent>
+        </DivBar>  
+)};
 
 export default Bar;

@@ -51,20 +51,27 @@ const ImgRandom = style.img`
 
 const Controls = (props)=>{
 
-    let playButton = <ImgPlay onClick={()=>{props.playHandler(true)}} disabled={props.selectedAlgorithm ? false : true} src={playImg} alt="Play" />;
+    let playButton = <ImgPlay onClick={props.play} disabled={props.selectedAlgorithm ? false : true} src={playImg} alt="Play" />;
 
     if(props.playing){
-        playButton = <ImgPlay onClick={()=>{props.playHandler(false)}} disabled={props.selectedAlgorithm ? false : true} src={pauseImg} alt="Play" />;
+        playButton = <ImgPlay onClick={props.pause} disabled={props.selectedAlgorithm ? false : true} src={pauseImg} alt="Play" />;
     }
 
     return (
         <DivControls>
             <PSpeed onClick={props.speedHandler}>{props.speed}x</PSpeed>
-            <ImgPrev disabled src={prevImg} alt="Play" />
+            <ImgPrev 
+                disabled={props.currentStep === -1}
+                onClick={props.stepBackward}
+                // onKeyDown={event=>{event.key === 'ArrowLeft' ? props.stepForward() : null}}
+                src={prevImg} alt="Play" />
 
             {playButton}
 
-            <ImgNext disabled={props.selectedAlgorithm ? false : true} src={prevImg} alt="Play" />
+            <ImgNext 
+                disabled={(props.selectedAlgorithm ? false : true) || (props.currentStep >= props.trackingDataLength-1)} 
+                onClick={props.stepForward}
+                src={prevImg} alt="Play" />
             <ImgRandom title='Randomize' onClick={props.generateRandomArray} src={randomizeImg} />
         </DivControls>
     );
