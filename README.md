@@ -27,7 +27,7 @@ This app is our ESP (End Semester Project) of the course CS250 - Data Structures
 
 ## Target Audience
 
-The basic audience of our project are those students whose are trying to learn different algorithms and their functioning.
+The basic audience of our project are those students who are trying to learn different algorithms and their functioning.
 
 ## Demo
 This app is deployed using **netlify** (free). You can visit this app [**here**](https://oramatismos.netlify.app/).
@@ -53,14 +53,16 @@ The `src` folder contains following 4 folders:
 
  - `algorithms` - This folder contains files for all the different algorithms. File of each algorithm contains its function. Files import helper functions like **swap** & **createRange** from `helper.js` file. Files import functions to track data like **newTrackingData**, **addToTrackingData** & **lastSorted** from `trackingData.js`.
  - `assets`  - This folder containers **.svg** files of different icons.
- - `components` - This folder contains state-less components of the app. 
-			- `Header` - This folder contains files of header like **header.js**. It has further components for **Algorithm Selection** and **Array Size Selection**.
-			- `Middle` - This folder contains middle part of the app. It includes **Bars**, **Controls**, **Process Colors** & **Description**.
-			- `Footer` - This folder contains `footer.js` which styles footer of the app.
-			- `UI` - This folder contains Ui elements like **Backdrop**.
+ - `components` - This folder contains state-less components of the app.
+ 
+	- `Header` - This folder contains files of header like **header.js**. It has further components for **Algorithm Selection** and **Array Size Selection**.
+	- `Middle` - This folder contains middle part of the app. It includes **Bars**, **Controls**, **Process Colors** & **Description**.
+	- `Footer` - This folder contains `footer.js` which styles footer of the app.
+	- `UI` - This folder contains Ui elements like **Backdrop**.
 - `container` - This folder contains stateful components. Following are 2 main stateful components:
-			- `Main` - This component is the base of the app. It manages state for app drawer, algorithm selection and array size selection. 
-			- `Content` - This is second component which manages state of visualization e.g play, pause, steps, tracking data and speed.
+
+	- `Main` - This component is the base of the app. It manages state for app drawer, algorithm selection and array size selection. 
+	- `Content` - This is second component which manages state of visualization e.g play, pause, steps, tracking data and speed.
 
 ## License
 This app is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
