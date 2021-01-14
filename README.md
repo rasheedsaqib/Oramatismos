@@ -4,6 +4,10 @@
 
 ## Description
 This is a progressive web app built with React. This app is used for visualizing different algorithms. The description of these algorithms is explained in the app. In addition to this, their time complexity in different cases (Best, Average & Worst) and space complexity is also given.
+## Developers
+
+ - Saqib Rasheed
+ - Kainat Fatima
 
 ## Algorithms
 It visualises following algorithms:
@@ -30,11 +34,11 @@ This app is deployed using **netlify** (free). You can visit this app [**here**]
 
 These images show this app on different devices.
 #### Desktop
-![Desktop View](https://1.bp.blogspot.com/-MlL-xYSOm_4/X_8ys7SK9DI/AAAAAAAAAx0/ptp-fmFetQMdqPZZzIm5dUwjVAW5wLqlQCLcBGAsYHQ/s320/oramatismos.netlify.app+%25280%2529.jpg)
+![enter image description here](https://1.bp.blogspot.com/-MlL-xYSOm_4/X_8ys7SK9DI/AAAAAAAAAx0/ptp-fmFetQMdqPZZzIm5dUwjVAW5wLqlQCLcBGAsYHQ/s320/oramatismos.netlify.app+%25280%2529.jpg)
 #### Tablet
-![Tablet View](https://1.bp.blogspot.com/--CcmmPuAeK0/X_8ysx1ie7I/AAAAAAAAAx4/i_sEhHq6N_A--fiypvQa-pw80-nyFVp3wCLcBGAsYHQ/s320/oramatismos.netlify.app+%25281%2529.jpg)
+![enter image description here](https://1.bp.blogspot.com/--CcmmPuAeK0/X_8ysx1ie7I/AAAAAAAAAx4/i_sEhHq6N_A--fiypvQa-pw80-nyFVp3wCLcBGAsYHQ/s320/oramatismos.netlify.app+%25281%2529.jpg)
 #### Mobile
-![Mobile View](https://1.bp.blogspot.com/-w7N1uTSPVdA/X_8ys3opLOI/AAAAAAAAAxw/jaSWq5IFGRcX7OWapa7ZeX7m95x6viHbwCLcBGAsYHQ/s320/oramatismos.netlify.app+%25282%2529.jpg)
+![enter image description here](https://1.bp.blogspot.com/-w7N1uTSPVdA/X_8ys3opLOI/AAAAAAAAAxw/jaSWq5IFGRcX7OWapa7ZeX7m95x6viHbwCLcBGAsYHQ/s320/oramatismos.netlify.app+%25282%2529.jpg)
 
 ## Installation
 
