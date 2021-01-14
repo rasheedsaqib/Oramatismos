@@ -17,7 +17,7 @@ const DivContent = style.div`
 
 const DivProgress = style.div`
     height: ${props=>props.height+'px'};
-    width: ${props=>(props.width !== 0 ? props.width+5 : props.width) +'%'};
+    width: ${props=>(props.width+'%')};
     background: ${props=>props.background};
     border-radius: 20px;
     text-align: left;
@@ -48,7 +48,7 @@ const Bars = (props)=>{
             <DivContent> {bars} </DivContent>
 
             <DivProgress background='#fcfcfc' height='8'>
-                <DivProgress background='#1a1b2f' width={((props.currentStep/props.totalSteps)  * 100)} height='5' margin='0 2px' />
+                <DivProgress background='#1a1b2f' width={Math.floor( (((props.currentStep+1)/props.totalSteps)*100) ? (((props.currentStep+1)/props.totalSteps)*100) : 0 )} height='5' margin='0 2px' />
             </DivProgress>
         </DivContainer>
     );

@@ -1,9 +1,9 @@
 //imports important component
 import React, {Component} from 'react';
-import Bars from '../../components/Container/Bars/bars';
-import Controls from '../../components/Container/Controls/controls';
-import ProcessColors from '../../components/Container/ProcessColors/processColors';
-import Description from '../../components/Container/Description/description';
+import Bars from '../../components/Middle/Bars/bars';
+import Controls from '../../components/Middle/Controls/controls';
+import ProcessColors from '../../components/Middle/ProcessColors/processColors';
+import Description from '../../components/Middle/Description/description';
 
 class Content extends Component{
 

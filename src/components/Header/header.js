@@ -33,7 +33,7 @@ const DivItems = style.div`
 const Hamburger = style.div`
     cursor: pointer;
     z-index: +2;
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1025px){
         display: none;
     }
 `;

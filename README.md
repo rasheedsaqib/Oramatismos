@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Welcome to Oramatismós!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Oramatismós** is a Greek word which means **visualization**. This app is called **Oramatismós** because it is used to visualise classic sorting algorithmes.
 
-## Available Scripts
+## Description
+This is a progressive web app built with React. This app is used for visualizing different algorithms. The description of these algorithms is explained in the app. In addition to this, their time complexity in different cases (Best, Average & Worst) and space complexity is also given.
 
-In the project directory, you can run:
+## Algorithms
+It visualises following algorithms:
 
-### `npm start`
+ 1. Bubble Sort
+ 2. Selection Sort
+ 3. Insertion Sort
+ 4. Merge Sort
+ 5. Quick Sort
+ 6. Quick Sort 3
+ 7. Heap Sort
+ 8. Shell Sort
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Purpose
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This app is our ESP (End Semester Project) of the course CS250 - Data Structures & Algorithms. Purpose of this app is to learn and improve web development & DSA skills.
 
-### `npm test`
+## Target Audience
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The basic audience of our project are those students whose are trying to learn different algorithms and their functioning.
 
-### `npm run build`
+## Demo
+This app is deployed using **netlify** (free). You can visit this app [**here**](https://oramatismos.netlify.app/).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These images show this app on different devices.
+#### Desktop
+![Desktop View](https://1.bp.blogspot.com/-MlL-xYSOm_4/X_8ys7SK9DI/AAAAAAAAAx0/ptp-fmFetQMdqPZZzIm5dUwjVAW5wLqlQCLcBGAsYHQ/s320/oramatismos.netlify.app+%25280%2529.jpg)
+#### Tablet
+![Tablet View](https://1.bp.blogspot.com/--CcmmPuAeK0/X_8ysx1ie7I/AAAAAAAAAx4/i_sEhHq6N_A--fiypvQa-pw80-nyFVp3wCLcBGAsYHQ/s320/oramatismos.netlify.app+%25281%2529.jpg)
+#### Mobile
+![Mobile View](https://1.bp.blogspot.com/-w7N1uTSPVdA/X_8ys3opLOI/AAAAAAAAAxw/jaSWq5IFGRcX7OWapa7ZeX7m95x6viHbwCLcBGAsYHQ/s320/oramatismos.netlify.app+%25282%2529.jpg)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+If you want to use this app, clone this repository:
+```
+$ git clone https://github.com/rasheedsaqib/Oramatismos.git
+$ cd oramatismos
+$ npm i
+```
+## App Structure
+The `src` folder contains following 4 folders:
 
-### `npm run eject`
+ - `algorithms` - This folder contains files for all the different algorithms. File of each algorithm contains its function. Files import helper functions like **swap** & **createRange** from `helper.js` file. Files import functions to track data like **newTrackingData**, **addToTrackingData** & **lastSorted** from `trackingData.js`.
+ - `assets`  - This folder containers **.svg** files of different icons.
+ - `components` - This folder contains state-less components of the app. 
+			- `Header` - This folder contains files of header like **header.js**. It has further components for **Algorithm Selection** and **Array Size Selection**.
+			- `Middle` - This folder contains middle part of the app. It includes **Bars**, **Controls**, **Process Colors** & **Description**.
+			- `Footer` - This folder contains `footer.js` which styles footer of the app.
+			- `UI` - This folder contains Ui elements like **Backdrop**.
+- `container` - This folder contains stateful components. Following are 2 main stateful components:
+			- `Main` - This component is the base of the app. It manages state for app drawer, algorithm selection and array size selection. 
+			- `Content` - This is second component which manages state of visualization e.g play, pause, steps, tracking data and speed.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This app is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
